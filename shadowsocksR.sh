@@ -20,7 +20,7 @@ echo "#############################################################"
 echo
 
 libsodium_file="libsodium-1.0.16"
-libsodium_url="https://github.com/jedisct1/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz"
+libsodium_url="https://raw.githubusercontent.com/qingmou/SSR/master/libsodium-1.0.16.tar.gz"
 
 #Current folder
 cur_dir=`pwd`
@@ -319,18 +319,18 @@ download_files(){
         exit 1
     fi
     # Download ShadowsocksR file
-    if ! wget --no-check-certificate -O manyuser.zip https://github.com/teddysun/shadowsocksr/archive/manyuser.zip; then
+    if ! wget --no-check-certificate -O manyuser.zip https://raw.githubusercontent.com/qingmou/SSR/master/shadowsocksr-manyuser.zip; then
         echo -e "[${red}Error${plain}] Failed to download ShadowsocksR file!"
         exit 1
     fi
     # Download ShadowsocksR init script
     if check_sys packageManager yum; then
-        if ! wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR -O /etc/init.d/shadowsocks; then
+        if ! wget --no-check-certificate https://raw.githubusercontent.com/qingmou/SSR/master/shadowsocksR -O /etc/init.d/shadowsocks; then
             echo -e "[${red}Error${plain}] Failed to download ShadowsocksR chkconfig file!"
             exit 1
         fi
     elif check_sys packageManager apt; then
-        if ! wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR-debian -O /etc/init.d/shadowsocks; then
+        if ! wget --no-check-certificate https://raw.githubusercontent.com/qingmou/SSR/master/shadowsocksR-debian -O /etc/init.d/shadowsocks; then
             echo -e "[${red}Error${plain}] Failed to download ShadowsocksR chkconfig file!"
             exit 1
         fi

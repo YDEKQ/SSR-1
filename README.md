@@ -1,7 +1,7 @@
 # SSR<br>
 参考链接：https://shadowsocks.be/9.html<br>
 
-CentOs下shadowsocks-libev一键安装脚本<br>
+CentOs下shadowsocksr一键安装脚本<br>
 系统支持：CentOS<br>
 内存要求：≥128M<br>
 日期：2017 年 07 月 27 日<br>

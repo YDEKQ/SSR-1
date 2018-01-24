@@ -1,7 +1,7 @@
 # SSR<br>
 参考链接：https://shadowsocks.be/9.html<br>
 
-CentOs下shadowsocksr一键安装脚本<br>
+CentOs下shadowsocksR一键安装脚本<br>
 系统支持：CentOS<br>
 内存要求：≥128M<br>
 日期：2017 年 07 月 27 日<br>
@@ -20,7 +20,7 @@ CentOs下shadowsocksr一键安装脚本<br>
 
 使用方法：<br>
 使用root用户登录，运行以下命令：<br>
-wget --no-check-certificate https://raw.githubusercontent.com/qingmou/SSR/master/shadowsocksR.sh
+wget --no-check-certificate https://raw.githubusercontent.com/qingmou/SSR/master/shadowsocksR.sh<br>
 chmod +x shadowsocksR.sh<br>
 ./shadowsocksR.sh 2>&1 | tee shadowsocksR.log<br>
 
